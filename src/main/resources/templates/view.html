@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View collection</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="bg-img"></div>
+<div id="view-main">
+    <div class="collection-element" th:each="imageUrl: ${imageData}">
+        <div class="card">
+            <img th:src="${imageUrl}">
+        </div>
+    </div>
+</div>
+<!--script src="js/index.js"></script-->
+</body>
+</html>

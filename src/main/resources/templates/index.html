@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BebroidApplication</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="bg-img"></div>
+<div id="main">
+    <input type="text" placeholder="Название" id="collectionName" class="menu-element">
+    <form action="view" method="get">
+        <input type="text" name="collectionName" class="hidden" required>
+        <button type="submit" class="menu-element">Просмотр коллекции</button>
+    </form>
+    <form action="extend" method="get">
+        <input type="text" name="collectionName" class="hidden" required>
+        <button type="submit" class="menu-element">Расширение коллекции</button>
+    </form>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
